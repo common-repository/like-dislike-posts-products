@@ -1,0 +1,87 @@
+span#ldppp_likesErrorMsg {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    background: rgba(0, 170, 235, 0.98);
+    color: #000;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+span#ldppp_errorMsg {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 250px;
+    display: block;
+    text-align: center;
+    background: rgba(0, 170, 235, 0.98);
+    color: #000;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+.ldppp_like-dislike a {
+    margin-right: 15px;
+	font-size: 24px;
+	color: black;
+	outline: none;
+	text-decoration: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+.ldppp_rate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.ldppp_rate:not(:checked) > input {
+    display: none;
+}
+.ldppp_rate:not(:checked) > label {
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+    display: flex;
+}
+.ldppp_rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.ldppp_rate:not(:checked) > label span {
+    display: none;
+}
+.ldppp_rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.ldppp_rate:not(:checked) > label:hover,
+.ldppp_rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.ldppp_rate > input:checked + label:hover,
+.ldppp_rate > input:checked + label:hover ~ label,
+.ldppp_rate > input:checked ~ label:hover,
+.ldppp_rate > input:checked ~ label:hover ~ label,
+.ldppp_rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.ldppp_rate label.ldppp_rated_class {
+    color: #deb217;
+}
+.ldppp_rate:not(:checked) > label.ldppp_rated_class, .ldppp_rate:not(:checked) > label.ldppp_rated_class ~ label {
+    color: #deb217;
+}
+
+.ldppp_totalratings {
+    display: inline-flex;
+}
+.ldppp_rate {
+    display: inline-flex;
+}

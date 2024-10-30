@@ -1,0 +1,95 @@
+/* Styling the form */
+.toplevel_page_ldppp-like-dislike-posts form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 700px;
+    float: left;
+}
+
+/* Styling form table */
+.form-table {
+    width: 100%;
+}
+
+.form-table th,
+.form-table td {
+    padding: 10px;
+}
+
+/* Styling form labels */
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Styling checkboxes and radio buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Styling submit button */
+.submit {
+    text-align: center;
+}
+
+/* Styling submit button */
+.button-primary {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #005d80;
+}
+/* Styling checkboxes */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*input[type="checkbox"]:checked {
+    background-color: #0073aa;
+    border-color: #0073aa;
+}*/
+
+/* Styling radio buttons */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Styling labels for checkboxes and radio buttons */
+label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Styling labels for checked checkboxes and radio buttons */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    color: #0073aa;
+    font-weight: bold;
+}
+
